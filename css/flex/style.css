@@ -1,0 +1,70 @@
+body {
+  background-color: cornsilk;
+}
+@keyframes egnltK {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 10px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 96vw;
+  margin: 1rem auto;
+}
+.container .works {
+  display: flex;
+  /* 规定弹性项目会在需要时换行。 */
+  flex-wrap: wrap;
+  /* 均匀排列每个元素,每个元素之间的间隔相等 */
+  justify-content: space-evenly;
+}
+.container .works .work {
+  background-image: url("https://static.nicegoodthings.com/uPic/co-link/chinese.colors.jpg");
+  animation-delay: 0s;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  background: 50%/100% 100% no-repeat
+    url("https://static.nicegoodthings.com/uPic/co-link/chinese.colors.jpg");
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 3rem;
+  margin-right: 0.5rem;
+  height: 16rem;
+  /* overflow-wrap规定浏览器是否可能为了防止溢出而在单词内折行（当字符串太长而无法适应其包含框时）。 */
+  overflow-wrap: break-word;
+  box-shadow: rgb(12 12 12) 0px 0px 6px 0px;
+  border-radius: 0.5rem;
+  width: 18rem;
+  transition: all 0.6s ease-in-out 0s;
+  animation: 2.5s ease 0s 1 normal both running egnltK;
+}
+.container .works .work:hover {
+  background-size: 120% 120%;
+  box-shadow: rgb(255 255 255) 0px 0px 10px 0px;
+}
+.works .work .mask {
+  position: absolute;
+  inset: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+.works .work .links {
+  display: flex;
+  z-index: 1;
+  align-self: flex-start;
+}
+.works .work .intro{
+    z-index: 2;
+}
