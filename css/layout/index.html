@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双栏布局</title>
+</head>
+<style>
+    body,
+    html {
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        background-color: aquamarine;
+        height: 80px;
+    }
+    .content{
+        display: flex;
+        height: 100%;
+    }
+
+    .left {
+        width: 100px;
+        height: 100%;
+        background-color:cornflowerblue;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+        background-color: brown;
+    }
+    .footer{
+        height: 100px;
+        background-color: darkgrey;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>导航栏</h1>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h2>侧边栏</h2>
+            </div>
+            <div class="right">
+                <h2>右侧内容</h2>
+            </div>
+        </div>
+    <div class="footer">
+        <h2>底部</h2>
+    </div>
+
+    </div>
+</body>
+
+</html>
