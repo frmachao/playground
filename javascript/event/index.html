@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件冒泡&事件委托</title>
+</head>
+<style>
+    .common {
+        padding: 20;
+    }
+
+    .father {
+        border: 1px solid black;
+        background-color: blue;
+    }
+
+    .son {
+        border: 1px solid black;
+        background-color: blueviolet;
+    }
+
+    .sun {
+        border: 1px solid black;
+        background-color: cadetblue;
+    }
+</style>
+
+<body>
+    <div class="father common">
+        father
+        <div class="son common">
+            son
+            <div class="sun common">
+                sun
+            </div>
+        </div>
+    </div>
+    <script>
+        var fa = document.querySelector('.father');
+        var so = document.querySelector('.son');
+        var su = document.querySelector('.sun');
+        fa.onclick = function () {
+            console.log('父元素被触发了');
+        };
+        so.onclick = function () {
+            console.log('子元素被触发了');
+        };
+        su.onclick = function () {
+            console.log('孙元素被触发了');
+        };
+    </script>
+    <ul>
+        <li>我是第1个li</li>
+        <li>我是第2个li</li>
+        <li>我是第3个li</li>
+        <li>我是第4个li</li>
+        <li>我是第5个li</li>
+        <li>我是第6个li</li>
+        <li>我是第7个li</li>
+        <li>我是第8个li</li>
+        <li>我是第9个li</li>
+        <li>我是第10个li</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        ul.onclick = function (e) {
+            e.target.style.backgroundColor = 'red';
+            //e.target 指的就是用户点击的那个元素，但是得代码结构清晰，层层嵌套建议不要用这个
+        };
+    </script>
+
+</body>
+
+</html>
