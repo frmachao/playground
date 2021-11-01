@@ -42,7 +42,8 @@
         var fa = document.querySelector('.father');
         var so = document.querySelector('.son');
         var su = document.querySelector('.sun');
-        fa.onclick = function () {
+        fa.onclick = function (e) {
+            console.log('e==',e)
             console.log('父元素被触发了');
         };
         so.onclick = function () {
