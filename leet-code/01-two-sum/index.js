@@ -25,5 +25,19 @@ var twoSum = function(nums, target) {
     }
 }
 };
+const twoSum1 = (array, number) => {
+    const map = new Map();
+    // for (let i = 0; i < array.length; i++) {
+    //     map.set(array[i], i)
+    // }
+    for (let j = 0; j < array.length; j++) {
+        map.set(array[j], j)
+       const elm= number-array[j]
+       if(map.has(elm)&&map.get(elm)!==j){
+           return [j,map.get(elm)]
+       }
+    }
+}
 var array=[2,7,11,15,1,8]
-console.log(twoSum(array,9))
+// console.log(twoSum(array,9))
+console.log(twoSum1(array,9))
