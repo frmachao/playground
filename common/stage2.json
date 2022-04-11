@@ -1,0 +1,318 @@
+{
+    "author": {
+        "email": "wangshijun2010@gmail.com",
+        "name": "wangshijun",
+        "url": "http://github.com/wangshijun"
+    },
+    "capabilities": {
+        "clusterMode": false
+    },
+    "children": [],
+    "community": "",
+    "description": "Demo blocklet that shows how developers earn crypto tokens by setting price for blocklets",
+    "did": "z8iZyFxvvqwW98MiqKv1tmws2o3iTZnTajE3B",
+    "dist": {
+        "integrity": "sha512-ckDO0OrCXLZ39v+vSQgdTMOeM5tKRcL9uwQ7Cg03IcGfrrQy4DoJE6hn66x0gh9g5VAc/JOzVVCL+3ycleY/iQ==",
+        "tarball": "payment-demo-blocklet-1.5.1.tgz"
+    },
+    "documentation": "",
+    "environments": [],
+    "files": [
+        "app/",
+        "logo.png",
+        "blocklet.yml",
+        "blocklet.md",
+        "README.md"
+    ],
+    "gitHash": "fdc45a1a522dba7f65a9b6dcab786639472f8c58",
+    "group": "static",
+    "homepage": "",
+    "interfaces": [
+        {
+            "name": "publicUrl",
+            "path": "/",
+            "port": "BLOCKLET_PORT",
+            "prefix": "*",
+            "protocol": "tcp",
+            "type": "web"
+        }
+    ],
+    "keywords": [
+        "demo",
+        "game",
+        "blocklet"
+    ],
+    "license": "MIT",
+    "logo": "logo.png",
+    "main": "app",
+    "name": "payment-demo-blocklet",
+    "nftFactory": "z3CtJWyoSgZUSDA1z1CVWTsAPy9zMfH2ejN2b",
+    "path": "/static/payment-demo-blocklet",
+    "requirements": {
+        "abtnode": ">=1.1.0",
+        "cpu": "*",
+        "os": "*"
+    },
+    "screenshots": [],
+    "signatures": [
+        {
+            "type": "ED25519",
+            "name": "Test registry",
+            "signer": "zNKdFm85rEDYTfXJDuwtoSc4DNNCJfgYFwVy",
+            "pk": "z7sQc8FCXtTH2yrftQ8g1FCDXjqvHve6c42ecU9WWBeFF",
+            "excludes": [
+                "htmlAst",
+                "lastPublishedAt",
+                "stats"
+            ],
+            "appended": [
+                "htmlAst",
+                "lastPublishedAt",
+                "stats"
+            ],
+            "created": "2021-11-19T08:29:28.497Z",
+            "sig": "zoKeQWMz3CtvQ29SeGq3f1XeKvPM5m64XV2PJbVXgaVF6xyFvhJ1eLkb9DYFfUkVtEu3EMtJ6sxU4oVSQvfEC7AX"
+        },
+        {
+            "appended": [
+                "htmlAst",
+                "lastPublishedAt",
+                "stats"
+            ],
+            "created": "2021-11-19T08:29:26.210Z",
+            "excludes": [
+                "htmlAst",
+                "lastPublishedAt",
+                "stats"
+            ],
+            "name": "payment-demo-blocklet",
+            "pk": "z2pHHNex3AhyynEymojVvQnC3cjNjUMraaYRcAa8YcvMw",
+            "signer": "z1gbvjKvdFKYSH8v5QKq1MQ3dFhGFbEaxNp",
+            "type": "ED25519",
+            "sig": "z5qsgVCaXtoY9zDqgoguMjCo8NdRaBrf4hxRnSfAPuMQA7YZZ9vw4B1i6RdeAKDmr6Niv7ZF31wDtEbcBWSmMPANE"
+        },
+        {
+            "created": "2021-11-19T08:28:29.464Z",
+            "name": "payment-demo-blocklet",
+            "pk": "zEmedUg245FgQMnxN2qas9jfz7yue5eoWmMWCGrSE9sFp",
+            "sig": "z2a4RRxYXgt6BbLiPXSHWH8gZhw2fKHAr8aGrENcbg4eYkpEnp1uGe2qMA3HHeYXMtX8WrGLoo3Wp29ouHXbAPcsA",
+            "signer": "z1Xy1RprgBogZq1DW9DP1GLjUZf2CGs3UsH",
+            "type": "ED25519"
+        }
+    ],
+    "specVersion": "1.1.1",
+    "timeout": {
+        "start": 60
+    },
+    "title": "Payment Demo",
+    "version": "1.5.1",
+    "payment": {
+        "price": [
+            {
+                "address": "z35n3WVTnN7KrR4gXn3szR6oneVefkBBx78Fc",
+                "value": 8.88,
+                "symbol": "PLAY3"
+            }
+        ],
+        "share": [
+            {
+                "name": "developer",
+                "address": "z1Xy1RprgBogZq1DW9DP1GLjUZf2CGs3UsH",
+                "value": 0.7
+            },
+            {
+                "name": "registry",
+                "address": "zNKdFm85rEDYTfXJDuwtoSc4DNNCJfgYFwVy",
+                "value": 0.3
+            }
+        ]
+    },
+    "htmlAst": {
+        "type": "root",
+        "children": [
+            {
+                "type": "element",
+                "tagName": "h1",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "payment-demo-blocklet",
+                        "position": {
+                            "start": {
+                                "line": 1,
+                                "column": 3,
+                                "offset": 2
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 24,
+                                "offset": 23
+                            }
+                        }
+                    }
+                ],
+                "position": {
+                    "start": {
+                        "line": 1,
+                        "column": 1,
+                        "offset": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 24,
+                        "offset": 23
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "value": "\n"
+            },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "Demo blocklet that shows how developers can earn crypto tokens by providing high quality blocklets",
+                        "position": {
+                            "start": {
+                                "line": 3,
+                                "column": 1,
+                                "offset": 25
+                            },
+                            "end": {
+                                "line": 3,
+                                "column": 99,
+                                "offset": 123
+                            }
+                        }
+                    }
+                ],
+                "position": {
+                    "start": {
+                        "line": 3,
+                        "column": 1,
+                        "offset": 25
+                    },
+                    "end": {
+                        "line": 3,
+                        "column": 99,
+                        "offset": 123
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "value": "\n"
+            },
+            {
+                "type": "element",
+                "tagName": "p",
+                "properties": {},
+                "children": [
+                    {
+                        "type": "text",
+                        "value": "To buy this blocklet, you need to go to https://playground.staging.arcblock.io to get some ",
+                        "position": {
+                            "start": {
+                                "line": 5,
+                                "column": 1,
+                                "offset": 125
+                            },
+                            "end": {
+                                "line": 5,
+                                "column": 92,
+                                "offset": 216
+                            }
+                        }
+                    },
+                    {
+                        "type": "element",
+                        "tagName": "code",
+                        "properties": {},
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "PLAY"
+                            }
+                        ],
+                        "position": {
+                            "start": {
+                                "line": 5,
+                                "column": 92,
+                                "offset": 216
+                            },
+                            "end": {
+                                "line": 5,
+                                "column": 98,
+                                "offset": 222
+                            }
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": " token.",
+                        "position": {
+                            "start": {
+                                "line": 5,
+                                "column": 98,
+                                "offset": 222
+                            },
+                            "end": {
+                                "line": 5,
+                                "column": 105,
+                                "offset": 229
+                            }
+                        }
+                    }
+                ],
+                "position": {
+                    "start": {
+                        "line": 5,
+                        "column": 1,
+                        "offset": 125
+                    },
+                    "end": {
+                        "line": 5,
+                        "column": 105,
+                        "offset": 229
+                    }
+                }
+            }
+        ],
+        "position": {
+            "start": {
+                "line": 1,
+                "column": 1,
+                "offset": 0
+            },
+            "end": {
+                "line": 6,
+                "column": 1,
+                "offset": 230
+            }
+        }
+    },
+    "stats": {
+        "downloads": 48
+    },
+    "category": {
+        "name": "communication",
+        "locales": {
+            "zh": "社交与通讯",
+            "en": "Communication"
+        },
+        "_id": "rkg9H9FcbVlN2SB3",
+        "createdAt": "2022-01-04T01:51:37.281Z",
+        "updatedAt": "2022-01-04T01:51:37.281Z"
+    },
+    "owner": {
+        "did": "z1gbvjKvdFKYSH8v5QKq1MQ3dFhGFbEaxNp",
+        "name": "LancelotLewis",
+        "role": "admin"
+    },
+    "lastPublishedAt": "2021-11-19T08:28:30.131Z"
+}

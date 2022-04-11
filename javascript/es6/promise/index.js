@@ -211,3 +211,4 @@ const test = new Promise((resolve, reject) => {
 test.then().then(res =>{
     console.log(res)
 })
+
